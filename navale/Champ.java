@@ -72,9 +72,9 @@ public class Champ {
 
         if (ans.equals( "yes" )) {
             System.out.println( "Longueur : " );
-            lon = myScan.nextInt() + 1;
+            lon = myScan.nextInt();
             System.out.println( "Largeur : " );
-            lar = myScan.nextInt() + 1;
+            lar = myScan.nextInt();
 
             if (lon < 5 && lar < 5)
                 throw new IllegalArgumentException( "Het is klein om te spelen !" ); // langue
