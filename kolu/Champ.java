@@ -13,7 +13,7 @@ import java.util.*;
 
 public class Champ extends Grid {
     static int nbre = 5; // nbre de bateaux
-    int tai;
+    int tai; //pour la taille de la grille par bateau
     static List<Point> myList = new ArrayList<>(); // Liste des pts appartenant à la mer et pouvant être pt bateau
     static HashMap<Integer, Boat> boats = new HashMap<>(); // Map des bateux existants
     static List<Point> listTir = new ArrayList<>(); // Liste des tirs effectués
