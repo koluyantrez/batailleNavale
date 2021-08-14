@@ -38,18 +38,28 @@ public class Game {
             detail.clear();
             g.nbre_boat();
             b = g.nbre;
-
+			
+			int tai = 0;
             int j = 1;
             do {
                 j++;
-                System.out.println( "Nmbre de bateaux de longeur " + j);
+                System.out.println( "Nombre de bateaux de longeur " + j);
                 int k = myScan.nextInt();
                 int back = detail.size();
                 if (i + k > b)
                     k = b - i;
                 detail.add(back, Point.element( j, k));
                 i = i + k;
-            } while (i < b);
+                tai += k*(i+2)*2; 
+                if(tai > g.getTaille()){
+					System.out.println("Pas assez de place");  
+					detail.clear();
+					i = 0;
+					j = 1;
+				}
+            } while (i < b && (j<lon || j<lar));
+            
+				
             String ignore = myScan.nextLine();  // ignorer la saisie automatique
         }
 
