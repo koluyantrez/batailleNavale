@@ -24,10 +24,10 @@ public class Champ extends Grid {
      * - permet d'initalisaer les grilles (matrice) userChamp et tirs par des 0
      */
 
-    public void initialization() {
-        endGame = false;   // fin du jeu si true, pas utilisée
-
-        System.out.print( "Welcome to the battle ship !" );
+    public void initialization()
+        
+        System.out.println( "By Yassine the GOAT and Aina the goat" );
+        System.out.println("ARE YOU READY FOR THE BATTLE SHIP !?!" );
         changeSize();
 
         for (int i = 0, k = 0; i < lon; i++) {
